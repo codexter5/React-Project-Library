@@ -1,0 +1,304 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Mastering React Development",
+      "category": "Programming",
+      "description": "A comprehensive guide to modern front-end development using React. This book covers components, hooks, state management, context API, routing, testing, and best practices for building scalable and maintainable applications. Includes practical examples and real-world projects.",
+      "shelf": "Rack A1 - Shelf 1",
+      "availability": "Available",
+      "author": "James Anderson",
+      "publisher": {
+        "name": "NewTek Publications",
+        "description": "High-quality computer science and software engineering books.",
+        "contactEmail": "contact@teksolutions.com",
+        "contactPhone": "555-555-5551"
+      }
+    },
+    {
+      "id": "2",
+      "title": "React & Redux in Action",
+      "category": "Web Development",
+      "description": "A practical guide to building maintainable front-end applications using React and Redux. Covers Redux architecture, middleware, asynchronous actions, and best practices. Includes hands-on exercises and project-based learning for web developers.",
+      "shelf": "Rack A1 - Shelf 2",
+      "availability": "Available",
+      "author": "Sophia Martinez",
+      "publisher": {
+        "name": "Veneer Learning",
+        "description": "Focused on modern UI/UX and front-end technologies.",
+        "contactEmail": "contact@loremipsum.com",
+        "contactPhone": "555-555-5552"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Data Science Essentials",
+      "category": "Data Science",
+      "description": "Covers fundamental concepts in data analysis, visualization, and machine learning for beginners. Topics include data cleaning, exploratory data analysis, predictive modeling, and practical examples using Python libraries like pandas, NumPy, and matplotlib.",
+      "shelf": "Rack B1 - Shelf 1",
+      "availability": "Borrowed",
+      "author": "Daniel Roberts",
+      "publisher": {
+        "name": "Dolor Cloud Press",
+        "description": "Cutting-edge books for web developers and software engineers.",
+        "contactEmail": "contact@dolorsitamet.com",
+        "contactPhone": "555-555-5553"
+      }
+    },
+    {
+      "id": "4",
+      "title": "AI & ML for Beginners",
+      "category": "AI & ML",
+      "description": "An introduction to artificial intelligence and machine learning concepts and applications. Covers supervised and unsupervised learning, neural networks, basic AI algorithms, and real-world use cases. Includes hands-on Python exercises and datasets.",
+      "shelf": "Rack B1 - Shelf 2",
+      "availability": "Available",
+      "author": "Emily Carter",
+      "publisher": {
+        "name": "Alpha Elite Books",
+        "description": "Educational content focused on design, development, and digital creativity.",
+        "contactEmail": "contact@adipisicingelit.com",
+        "contactPhone": "555-555-5554"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Full Stack Mobile Development",
+      "category": "Mobile Development",
+      "description": "Build complete mobile applications using modern frameworks and best practices. Covers React Native, Flutter, RESTful APIs, database integration, and deployment for iOS and Android. Includes step-by-step examples and performance optimization tips.",
+      "shelf": "Rack C1 - Shelf 1",
+      "availability": "Reserved",
+      "author": "Michael Brown",
+      "publisher": {
+        "name": "Browning Technologies Publishing",
+        "description": "Advanced-level books for developers and IT professionals.",
+        "contactEmail": "contact@consecteturadipisicing.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Networking Fundamentals",
+      "category": "Networking",
+      "description": "Learn the basics of computer networking, including network topologies, protocols, IP addressing, DNS, routing, and network security. Ideal for beginners and IT professionals preparing for networking certifications.",
+      "shelf": "Rack C1 - Shelf 2",
+      "availability": "Available",
+      "author": "Oliver Smith",
+      "publisher": {
+        "name": "Port Solutions Publishing",
+        "description": "Specializes in mobile, web, and cloud computing educational resources.",
+        "contactEmail": "contact@ipsumlorem.com",
+        "contactPhone": "555-555-5556"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Advanced Python for Programming",
+      "category": "Programming",
+      "description": "Master advanced Python concepts including object-oriented programming, decorators, generators, multithreading, and data structures. Practical projects demonstrate Python’s capabilities for software development, automation, and scripting.",
+      "shelf": "Rack A2 - Shelf 1",
+      "availability": "Available",
+      "author": "Laura Green",
+      "publisher": {
+        "name": "TechNova Publishing",
+        "description": "In-depth technical books for modern developers.",
+        "contactEmail": "info@technova.com",
+        "contactPhone": "555-555-5557"
+      }
+    },
+    {
+      "id": "8",
+      "title": "Modern Web Development",
+      "category": "Web Development",
+      "description": "Learn modern web technologies including HTML5, CSS3, JavaScript, and React. Covers responsive design, accessibility, progressive web apps, and modern frontend tooling. Includes examples for building interactive, scalable websites.",
+      "shelf": "Rack A2 - Shelf 2",
+      "availability": "Borrowed",
+      "author": "Kevin Lee",
+      "publisher": {
+        "name": "CodeCraft Media",
+        "description": "Focused on modern web development tutorials and guides.",
+        "contactEmail": "contact@codecraft.com",
+        "contactPhone": "555-555-5558"
+      }
+    },
+    {
+      "id": "9",
+      "title": "Machine Learning in Practice",
+      "category": "AI & ML",
+      "description": "Hands-on guide to implementing machine learning algorithms in real-world applications. Covers regression, classification, clustering, and neural networks with Python libraries like scikit-learn and TensorFlow.",
+      "shelf": "Rack B2 - Shelf 1",
+      "availability": "Available",
+      "author": "Angela White",
+      "publisher": {
+        "name": "DevBooks Publishing",
+        "description": "Software engineering and programming books.",
+        "contactEmail": "info@devbooks.com",
+        "contactPhone": "555-555-5559"
+      }
+    },
+    {
+      "id": "10",
+      "title": "Data Analytics with Python",
+      "category": "Data Science",
+      "description": "Learn data analytics techniques using Python, pandas, NumPy, and visualization libraries. Covers data cleaning, exploratory analysis, reporting, and practical case studies to solve real-world business problems.",
+      "shelf": "Rack B2 - Shelf 2",
+      "availability": "Available",
+      "author": "Brian Taylor",
+      "publisher": {
+        "name": "NextGen Tech Press",
+        "description": "Guides on modern web and data development.",
+        "contactEmail": "contact@nextgenpress.com",
+        "contactPhone": "555-555-5560"
+      }
+    },
+    {
+      "id": "11",
+      "title": "React Native Essentials",
+      "category": "Mobile Development",
+      "description": "Build cross-platform mobile apps with React Native. Covers navigation, state management, UI components, API integration, and performance optimization techniques for both iOS and Android platforms.",
+      "shelf": "Rack C2 - Shelf 1",
+      "availability": "Available",
+      "author": "Sophia King",
+      "publisher": {
+        "name": "FastCode Publishing",
+        "description": "Performance and best practices in software development.",
+        "contactEmail": "support@fastcode.com",
+        "contactPhone": "555-555-5561"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Cloud Networking Essentials",
+      "category": "Networking",
+      "description": "Understand cloud networking fundamentals, protocols, security best practices, virtualization, and deployment strategies for cloud-based applications. Includes AWS and Azure practical examples.",
+      "shelf": "Rack C2 - Shelf 2",
+      "availability": "Reserved",
+      "author": "Daniel Harris",
+      "publisher": {
+        "name": "GraphTech Books",
+        "description": "Modern full-stack and database technologies.",
+        "contactEmail": "contact@graphtech.com",
+        "contactPhone": "555-555-5562"
+      }
+    },
+    {
+      "id": "13",
+      "title": "AI for Web Developers",
+      "category": "AI & ML",
+      "description": "Integrate artificial intelligence into web applications using JavaScript and Python libraries. Covers natural language processing, computer vision, recommendation engines, and deploying AI models in production.",
+      "shelf": "Rack B3 - Shelf 1",
+      "availability": "Available",
+      "author": "Emily Scott",
+      "publisher": {
+        "name": "ScaleUp Publishing",
+        "description": "Books on scalable and maintainable software solutions.",
+        "contactEmail": "info@scaleup.com",
+        "contactPhone": "555-555-5563"
+      }
+    },
+    {
+      "id": "14",
+      "title": "Full Stack Data Science",
+      "category": "Data Science",
+      "description": "A complete guide to building full-stack data science projects. Covers data collection, preprocessing, modeling, visualization, and deployment of web-based dashboards using Python and JavaScript frameworks.",
+      "shelf": "Rack B3 - Shelf 2",
+      "availability": "Available",
+      "author": "Robert Allen",
+      "publisher": {
+        "name": "DesignDev Press",
+        "description": "Front-end design and UI development books.",
+        "contactEmail": "contact@designdev.com",
+        "contactPhone": "555-555-5564"
+      }
+    },
+    {
+      "id": "15",
+      "title": "Networking Security Basics",
+      "category": "Networking",
+      "description": "Learn fundamentals of network security, including firewalls, intrusion detection, VPNs, and best practices for protecting organizational networks against cyber threats.",
+      "shelf": "Rack C3 - Shelf 1",
+      "availability": "Available",
+      "author": "Anna Moore",
+      "publisher": {
+        "name": "MobileTech Books",
+        "description": "Resources for mobile and cross-platform development.",
+        "contactEmail": "info@mobiletech.com",
+        "contactPhone": "555-555-5565"
+      }
+    },
+    {
+      "id": "16",
+      "title": "Programming in JavaScript",
+      "category": "Programming",
+      "description": "Learn JavaScript fundamentals and advanced concepts, including ES6 features, asynchronous programming, DOM manipulation, and building interactive web applications with practical examples.",
+      "shelf": "Rack A3 - Shelf 1",
+      "availability": "Borrowed",
+      "author": "Thomas Wilson",
+      "publisher": {
+        "name": "NodePress",
+        "description": "JavaScript and Node.js books for developers.",
+        "contactEmail": "contact@nodepress.com",
+        "contactPhone": "555-555-5566"
+      }
+    },
+    {
+      "id": "17",
+      "title": "AI & ML in Production",
+      "category": "AI & ML",
+      "description": "Deploy AI and ML models in production environments. Covers model training, evaluation, deployment strategies, monitoring, and scaling with real-world industry examples.",
+      "shelf": "Rack B3 - Shelf 3",
+      "availability": "Available",
+      "author": "Megan Foster",
+      "publisher": {
+        "name": "FireTech Publishing",
+        "description": "Modern web and cloud development books.",
+        "contactEmail": "contact@firetech.com",
+        "contactPhone": "555-555-5567"
+      }
+    },
+    {
+      "id": "18",
+      "title": "Mobile Development with Flutter",
+      "category": "Mobile Development",
+      "description": "Learn to develop cross-platform mobile applications using Flutter and Dart. Covers UI design, state management, backend integration, testing, and publishing apps for iOS and Android platforms.",
+      "shelf": "Rack C3 - Shelf 2",
+      "availability": "Available",
+      "author": "Victor Reed",
+      "publisher": {
+        "name": "EnterpriseBooks",
+        "description": "Advanced software engineering books for professionals.",
+        "contactEmail": "info@enterprisebooks.com",
+        "contactPhone": "555-555-5568"
+      }
+    },
+    {
+      "id": "19",
+      "title": "Data Science with R",
+      "category": "Data Science",
+      "description": "Learn data manipulation, visualization, and statistical modeling using R. Covers data wrangling with dplyr, visualization with ggplot2, and building predictive models for real-world datasets.",
+      "shelf": "Rack B3 - Shelf 3",
+      "availability": "Reserved",
+      "author": "Laura Adams",
+      "publisher": {
+        "name": "SpeedCode Press",
+        "description": "Performance optimization in software development.",
+        "contactEmail": "contact@speedcode.com",
+        "contactPhone": "555-555-5569"
+      }
+    },
+    {
+      "id": "20",
+      "title": "Web Development with Node.js",
+      "category": "Web Development",
+      "description": "Learn full-stack web development using Node.js, Express, and React for front-end. Covers REST APIs, database integration, authentication, deployment, and best practices for building scalable web applications.",
+      "shelf": "Rack A3 - Shelf 2",
+      "availability": "Available",
+      "author": "Nathan Hill",
+      "publisher": {
+        "name": "SafeCode Publishing",
+        "description": "Cybersecurity and safe coding practices.",
+        "contactEmail": "info@safecode.com",
+        "contactPhone": "555-555-5570"
+      }
+    }
+  ]
+}
