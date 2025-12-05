@@ -7,19 +7,19 @@ const Navbar = () => {
 
   const linkClass = ({ isActive }) =>
     isActive
-      ? "bg-amber-100 text-amber-800 font-semibold rounded-lg px-4 py-2 shadow-md transition duration-300"
-      : "text-amber-50 hover:bg-amber-100 hover:text-amber-800 rounded-lg px-4 py-2 transition duration-300";
+      ? "bg-amber-100 text-amber-900 font-semibold rounded-lg px-4 py-2 shadow-md transition duration-300"
+      : "text-amber-50 hover:bg-amber-100 hover:text-amber-900 rounded-lg px-4 py-2 transition duration-300";
 
   return (
-    <nav className="bg-amber-800 border-b border-amber-700 shadow-md sticky top-0 z-50">
+    <nav className="bg-amber-900 border-b border-amber-700 shadow-md sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-3">
             <img className="h-10 w-auto" src={logo} alt="Library Logo" />
-            <span className="hidden md:block text-amber-50 text-2xl font-extrabold tracking-wide">
-              Cozy Library
+            <span className="hidden md:block text-amber-50 text-2xl font-extrabold font-serif tracking-wide">
+              React Library
             </span>
           </NavLink>
 
@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-4">
             <NavLink to="/" className={linkClass}>Home</NavLink>
             <NavLink to="/books" className={linkClass}>Browse Books</NavLink>
-            <NavLink to="/add-book" className={linkClass}>Request Books</NavLink>
+            <NavLink to="/add-book" className={linkClass}>Add Books</NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -45,31 +45,33 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-amber-800 px-4 pt-4 pb-6 space-y-2">
-            <NavLink
-              to="/"
-              className="block text-amber-50 hover:bg-amber-100 hover:text-amber-800 font-medium rounded-lg px-4 py-2 transition duration-300"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/books"
-              className="block text-amber-50 hover:bg-amber-100 hover:text-amber-800 font-medium rounded-lg px-4 py-2 transition duration-300"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Browse Books
-            </NavLink>
-            <NavLink
-              to="/add-book"
-              className="block text-amber-50 hover:bg-amber-100 hover:text-amber-800 font-medium rounded-lg px-4 py-2 transition duration-300"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Request Books
-            </NavLink>
-          </div>
-        )}
+        <div
+          className={`md:hidden bg-amber-900 overflow-hidden transition-max-height duration-500 ease-in-out ${
+            isMobileMenuOpen ? "max-h-96 py-4" : "max-h-0"
+          }`}
+        >
+          <NavLink
+            to="/"
+            className="block text-amber-50 hover:bg-amber-100 hover:text-amber-900 font-medium rounded-lg px-4 py-2 transition duration-300"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/books"
+            className="block text-amber-50 hover:bg-amber-100 hover:text-amber-900 font-medium rounded-lg px-4 py-2 transition duration-300"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Browse Books
+          </NavLink>
+          <NavLink
+            to="/add-book"
+            className="block text-amber-50 hover:bg-amber-100 hover:text-amber-900 font-medium rounded-lg px-4 py-2 transition duration-300"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Add Books
+          </NavLink>
+        </div>
       </div>
     </nav>
   );
