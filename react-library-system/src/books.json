@@ -4,9 +4,9 @@
       "id": "1",
       "title": "Mastering React Development",
       "category": "Programming",
-      "description": "A comprehensive guide to modern front-end development using React. This book covers components, hooks, state management, context API, routing, testing, and best practices for building scalable and maintainable applications. Includes practical examples and real-world projects.",
       "shelf": "Rack A1 - Shelf 1",
-      "availability": "Available",
+      "description": "A comprehensive guide to modern front-end development using React. This book covers components, hooks, state management, context API, routing, testing, and best practices for building scalable and maintainable applications. Includes practical examples and real-world projects.",
+      "availability": "Reserved",
       "author": "James Anderson",
       "publisher": {
         "name": "NewTek Publications",

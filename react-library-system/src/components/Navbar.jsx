@@ -1,41 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/react.svg";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const linkClass = ({ isActive }) =>
     isActive
-      ? "bg-white text-indigo-700 font-semibold rounded-lg px-4 py-2 shadow-md transition duration-300"
-      : "text-white hover:bg-indigo-600 hover:text-white rounded-lg px-4 py-2 transition duration-300";
+      ? "bg-amber-100 text-amber-800 font-semibold rounded-lg px-4 py-2 shadow-md transition duration-300"
+      : "text-amber-50 hover:bg-amber-100 hover:text-amber-800 rounded-lg px-4 py-2 transition duration-300";
 
   return (
-    <nav className="bg-indigo-700 border-b border-indigo-500 shadow-md sticky top-0 z-50">
+    <nav className="bg-amber-800 border-b border-amber-700 shadow-md sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
+
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-3">
-            <img className="h-10 w-auto" src={logo} alt="React Library" />
-            <span className="hidden md:block text-white text-2xl font-extrabold">
-              React Library
+            <img className="h-10 w-auto" src={logo} alt="Library Logo" />
+            <span className="hidden md:block text-amber-50 text-2xl font-extrabold tracking-wide">
+              Cozy Library
             </span>
           </NavLink>
 
-          {/* Navigation Links */}
+          {/* Desktop Links */}
           <div className="hidden md:flex space-x-4">
-            <NavLink to="/" className={linkClass}>
+            <NavLink to="/" className={linkClass}>Home</NavLink>
+            <NavLink to="/books" className={linkClass}>Browse Books</NavLink>
+            <NavLink to="/add-book" className={linkClass}>Request Books</NavLink>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-amber-50 hover:text-amber-200 focus:outline-none"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-amber-800 px-4 pt-4 pb-6 space-y-2">
+            <NavLink
+              to="/"
+              className="block text-amber-50 hover:bg-amber-100 hover:text-amber-800 font-medium rounded-lg px-4 py-2 transition duration-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Home
             </NavLink>
-            <NavLink to="/books" className={linkClass}>
-              Books
+            <NavLink
+              to="/books"
+              className="block text-amber-50 hover:bg-amber-100 hover:text-amber-800 font-medium rounded-lg px-4 py-2 transition duration-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Browse Books
             </NavLink>
-            <NavLink to="/add-book" className={linkClass}>
+            <NavLink
+              to="/add-book"
+              className="block text-amber-50 hover:bg-amber-100 hover:text-amber-800 font-medium rounded-lg px-4 py-2 transition duration-300"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
               Request Books
             </NavLink>
           </div>
-
-          {/* Mobile Menu Button (optional) */}
-          {/* You can add a hamburger menu here for mobile */}
-        </div>
+        )}
       </div>
     </nav>
   );

@@ -36,10 +36,10 @@ const LibraryBook = ({ book }) => {
         <div className="mb-4">
           <span
             className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
-              book.available ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+              book.availability ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
             }`}
           >
-            {book.available ? 'Available' : 'Not Available'}
+            {book.availability ? book.availability : 'Not Available'}
           </span>
         </div>
 
