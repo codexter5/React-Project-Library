@@ -4,19 +4,21 @@ import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
   return (
-    <>
-      <section className="text-center flex flex-col justify-center items-center h-96">
-        <FaExclamationTriangle className="text-yellow-400 text-6xl mb-4"/>
-        <h1 className="text-6xl font-bold mb-4">404 Not Found</h1>
-        <p className="text-xl mb-5">This page does not exist</p>
-        <Link
-          to="/"
-          className="text-white bg-indigo-700 hover:bg-indigo-900 rounded-md px-3 py-2 mt-4"
-        >
-          Go Back
-        </Link>
-      </section>
-    </>
+    <section className="bg-amber-50 min-h-screen flex flex-col justify-center items-center px-4">
+      <FaExclamationTriangle className="text-amber-600 text-6xl mb-4" />
+      <h1 className="text-6xl font-serif font-extrabold text-amber-900 mb-4">
+        404 Not Found
+      </h1>
+      <p className="text-2xl text-amber-800 mb-6">
+        This page does not exist
+      </p>
+      <Link
+        to="/"
+        className="bg-amber-900 text-amber-50 font-semibold py-2 px-6 rounded-full shadow hover:bg-amber-700 transition duration-200"
+      >
+        Go Back
+      </Link>
+    </section>
   );
 };
 

@@ -27,20 +27,28 @@ const BooksListing = ({ isHome = false }) => {
   return (
     <>
       {/* Browse Books */}
-      <section className="bg-blue-50 px-4 py-10">
-        <div className="container-xl lg:container m-auto">
-          <h2 className="text-3xl font-bold text-indigo-500 mb-6 text-center">
+      <section className="bg-amber-50 px-4 py-12">
+        <div className="container-xl lg:container mx-auto">
+          <h2 className="text-3xl font-serif font-bold text-amber-900 mb-8 text-center">
             {isHome ? "Recent Books" : "Browse Library"}
           </h2>
 
           {loading ? (
             <Spinner loading={loading} />
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          ) : books.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {books.map((book) => (
-                <LibraryBook key={book.id} book={book} />
+                <LibraryBook
+                  key={book.id}
+                  book={book}
+                  className="bg-amber-100 border border-amber-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 p-4"
+                />
               ))}
             </div>
+          ) : (
+            <p className="text-center text-amber-700 font-medium mt-6">
+              No books found.
+            </p>
           )}
         </div>
       </section>

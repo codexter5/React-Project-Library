@@ -11,23 +11,23 @@ const LibraryBook = ({ book }) => {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden relative">
+    <div className="bg-amber-50 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden relative border border-amber-200">
       <div className="p-6 flex flex-col h-full">
         {/* Category & Title */}
         <div className="mb-4">
-          <span className="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">
+          <span className="inline-block bg-amber-200 text-amber-900 text-xs font-semibold px-3 py-1 rounded-full mb-2">
             {book.category}
           </span>
-          <h3 className="text-2xl font-bold text-gray-900 mb-1">{book.title}</h3>
-          <p className="text-gray-500 text-sm">by {book.author}</p>
+          <h3 className="text-2xl font-serif font-bold text-amber-900 mb-1">{book.title}</h3>
+          <p className="text-amber-700 text-sm">by {book.author}</p>
         </div>
 
         {/* Description */}
-        <div className="text-gray-600 mb-4 text-sm">{description}</div>
+        <div className="text-amber-700 mb-4 text-sm">{description}</div>
 
         <button
           onClick={() => setShowFullDescription((prev) => !prev)}
-          className="text-indigo-500 font-medium mb-4 hover:text-indigo-600 transition-colors duration-200 text-sm"
+          className="text-amber-900 font-medium mb-4 hover:text-amber-700 transition-colors duration-200 text-sm"
         >
           {showFullDescription ? 'Show Less' : 'Read More'}
         </button>
@@ -43,18 +43,18 @@ const LibraryBook = ({ book }) => {
           </span>
         </div>
 
-        <div className="border-t border-gray-200 my-4" />
+        <div className="border-t border-amber-200 my-4" />
 
         {/* Location & Details */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mt-auto">
-          <div className="flex items-center text-orange-700 text-sm font-medium">
+          <div className="flex items-center text-amber-800 text-sm font-medium">
             <FaMapMarkerAlt className="mr-2 text-base" />
             {book.shelf}
           </div>
 
           <Link
             to={`/books/${book.id}`}
-            className="flex items-center gap-2 justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-full text-sm transition duration-300 shadow-md"
+            className="flex items-center gap-2 justify-center bg-amber-900 hover:bg-amber-700 text-amber-50 font-semibold py-2 px-4 rounded-full text-sm transition duration-300 shadow-md"
           >
             <FaBookOpen />
             View Details
